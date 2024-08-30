@@ -1,12 +1,22 @@
 .info-card{
     display: flex;
     flex-direction: column;
-    grid-gap: clamp(20px, 2.2321vw, 30px);
+
+    @include for-mobile{
+        grid-gap: 20px;
+    }
+
+    @include mobile{
+        grid-gap: 25px;
+    }
+    
 
     &__image{
         width: 100%;
         height: auto;
-
+        transition: all .8s;
+        display: flex;
+        
         img,picture{
             width: 100%;
             height: auto;

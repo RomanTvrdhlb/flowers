@@ -42,6 +42,18 @@
                 background-color: rgba(var(--bg-c),1.0);
             }
         }
+
+        &.small{
+            height: clamp(245px, 43.3036vw, 582px);
+
+            img,picture{
+                height: clamp(221px, 39.5833vw, 532px);
+            }
+
+            &::before{
+                height: clamp(232px, 39.5833vw, 484px);
+            }
+        }
     }
 
     &__list{

@@ -21,6 +21,10 @@
                 display: none;
             }
         }
+
+        @include ios{
+            margin: 0 -10px;
+        }
     }
 
     &__box{

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="about-section__box">
+          <div class="about-section__inner">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">
+                  <svg width='16' height='14'>
+                    <use href='img/sprite/sprite.svg#home2'></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Auto</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">Print version</a>
+              </li>
+            </ul>
+
+            <ul class="about-list about-list--mode">
+              <li class="about-list__item">
+                <a href="#" class="blog-card">
+                  <div class="blog-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/about/img3.webp'>
+                      <img width='453' height='469' src='img/about/img3.png' alt='image'>
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="about-list__item">
+                <a href="#" class="blog-card">
+                  <div class="blog-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/about/img3.webp'>
+                      <img width='453' height='469' src='img/about/img3.png' alt='image'>
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="about-list__item">
+                <a href="#" class="blog-card">
+                  <div class="blog-card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/about/img3.webp'>
+                      <img width='453' height='469' src='img/about/img3.png' alt='image'>
+                    </picture>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="about-section__deskr" data-clip>
+            <h2 class="subtitle">About Yellow Pages</h2>
+            <div class="editor" data-clip-item>
+            <p>Yellow Pages is a directory that provides contact information for businesses and services. Originally published as a paper directory, it is now also 
+              available in digital form. Yellow Pages organizes information by categories, making it easier to find the companies or services you need. 
+              It is an important tool for locating local businesses such as repair shops, medical facilities, restaurants, and other services.</p>
+            </div>
+              <button class="hidden-btn" data-clip-btn>Show text</button> 
+            </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

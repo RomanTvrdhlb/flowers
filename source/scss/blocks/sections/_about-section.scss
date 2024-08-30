@@ -1,0 +1,11 @@
+.about-section {
+  margin-bottom: clamp(100px, 11.1607vw, 150px);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 3.7202vw, 50px);
+  }
+
+
+}

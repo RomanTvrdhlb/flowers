@@ -1,0 +1,250 @@
+<div class="overlay fixed-block" data-overlay>
+
+    <div class="modal filter" data-popup="filter">
+        <button class="close" aria-label="Закрыть модальное окно">
+          <svg width="20" height="20">
+            <use href="img/sprite/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal__box">
+                <form class="search">
+                    <span class="search__icon">
+                    <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#search'></use>
+                    </svg>
+                    </span>
+                    <label for="filter_search" class="search__label">
+                    <input type="text" name="filter_search" id="filter_search" class="search__input" placeholder="Place your keyword">
+                    </label>
+                    <button class="yellow-btn">SEARCH</button>
+                </form>
+            <div class="modal__wrapp" data-hide-parent>
+                <ul class="filter-list" >
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img1.webp'>
+                            <img width='38' height='36' src='img/filter/img1.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Auto</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img2.webp'>
+                            <img width='38' height='36' src='img/filter/img2.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Medical</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img3.webp'>
+                            <img width='38' height='36' src='img/filter/img3.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Professional Services</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img4.webp'>
+                            <img width='38' height='36' src='img/filter/img4.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Leisure and Entertainment</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img5.webp'>
+                            <img width='38' height='36' src='img/filter/img5.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Home Services and Remodeling</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img6.webp'>
+                            <img width='38' height='36' src='img/filter/img6.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Stores</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img7.webp'>
+                            <img width='38' height='36' src='img/filter/img7.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Stores</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img8.webp'>
+                            <img width='38' height='36' src='img/filter/img8.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">Other</span>
+                    </a>
+                    </li>
+                    <li class="filter-list__item">
+                    <a href="#" class="filter-card">
+                        <span class="filter-card__icon">
+                        <picture>
+                            <source type='image/webp' srcset='img/filter/img9.webp'>
+                            <img width='38' height='36' src='img/filter/img9.png' alt='image'>
+                        </picture>
+                        </span>
+                        <span class="filter-card__title">All Categories</span>
+                    </a>
+                    </li>
+                </ul>
+                <button class="hidden-btn">More categories</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal write" data-popup="write">
+        <button class="close" aria-label="Закрыть модальное окно">
+          <svg width="20" height="20">
+            <use href="img/sprite/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal__box">
+            <span class="modal__title">Write moderator</span>
+
+            <form class="main-form">
+                <label for="name_full" class="main-form__label">
+                  <input type="text" name="name_full" id="name_full" class="main-form__input" placeholder="Full name">
+                </label>
+                <label for="phone_3" class="main-form__label">
+                  <input type="tel" name="phone_3" id="phone_3" class="main-form__input" placeholder="Phone">
+                </label>
+                <label for="email_3" class="main-form__label">
+                  <input type="email" name="email_3" id="email_3" class="main-form__input" placeholder="E-mail">
+                </label>
+                <label for="problem" class="main-form__label">
+                  <textarea name="problem" id="problem" class="main-form__area main-form__area--mode" placeholder="Describe your problem"></textarea>
+                </label>
+  
+                <button class="yellow-btn">Submit</button>
+              </form>
+
+              <p>By clicking the Submit button, I agree to the following 
+                to the processing of personal data</p>
+        </div>
+    </div>
+
+    <div class="modal edit" data-popup="edit">
+
+        <div class="modal__box">
+            <div class="modal__top">
+                <span class="modal__subtitle">24/7 Emergency Locksmith</span>
+                <span class="modal__adress">NJ</span>
+            </div>
+
+            <form class="main-form">
+                <label for="company_4" class="main-form__label">
+                    <input type="text" name="company_4" id="company_4" class="main-form__input" placeholder="Company Name">
+                  </label>
+                  <label for="adress_4" class="main-form__label">
+                    <input type="text" name="adress_4" id="adress_4" class="main-form__input" placeholder="Adress">
+                  </label>
+                  <label for="phone_4" class="main-form__label">
+                    <input type="tel" name="phone_4" id="phone_4" class="main-form__input" placeholder="Phone">
+                  </label>
+                  <label for="email_4" class="main-form__label">
+                    <input type="email" name="email_4" id="email_4" class="main-form__input" placeholder="E-mail">
+                  </label>
+  
+                  <div class="modal__btns">
+                    <button class="yellow-btn">Save</button>
+                    <button class="transparent-btn close">Cansel</button>
+                  </div>
+              </form>
+        </div>
+    </div>
+
+    <div class="modal change" data-popup="change">
+        <button class="close" aria-label="Закрыть модальное окно">
+            <svg width="20" height="20">
+              <use href="img/sprite/sprite.svg#close"></use>
+            </svg>
+          </button>
+  
+          <div class="modal__box">
+              <span class="modal__title">Data change request</span>
+
+            <form class="main-form">
+                <label for="full_name_5" class="main-form__label">
+                    <input type="text" name="full_name_5" id="full_name_5" class="main-form__input" placeholder="Full name">
+                  </label>
+                  <label for="phone_5" class="main-form__label">
+                    <input type="tel" name="phone_5" id="phone_5" class="main-form__input" placeholder="Phone">
+                  </label>
+                  <label for="email_5" class="main-form__label">
+                    <input type="email" name="email_5" id="email_5" class="main-form__input" placeholder="Mail">
+                  </label>
+
+                  <div class="main-form__inner">
+                    <label for="code_5" class="main-form__label">
+                      <input type="number" name="code_5" id="code_5" class="main-form__input" placeholder="Write code">
+                    </label>
+
+                    <div class="main-form__wrapp">
+                      <div class="main-form__code">
+                        <div class="main-form__code-bg">
+                          <picture>
+                            <source type='image/webp' srcset='img/index/code.webp'>
+                            <img width='124' height='50' src='img/index/code.png' alt='image'>
+                          </picture>
+                        </div>
+                        <span class="main-form__code-value">113236</span>
+                      </div>
+
+                      <button class="main-form__refresh">
+                        <svg width='20' height='20'>
+                          <use href='img/sprite/sprite.svg#refresh'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <button class="yellow-btn">Submit</button>
+              </form>
+                <p>By clicking the Submit button, I agree to the following 
+                    to the processing of personal data</p>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head-calendar.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="cabinet-section">
+      <div class="container">
+        <div class="cabinet-section__box">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">
+                <svg width='16' height='14'>
+                  <use href='img/sprite/sprite.svg#home2'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Profile</a>
+            </li>
+          </ul>
+
+          <div class="cabinet-section__wrapp">
+            <h1 class="cabinet-section__title pretitle">Profile</h1>
+
+            <aside class="cabinet-nav">
+              <span class="subtitle subtitle--mode">John Benet</span>
+
+              <ul class="cabinet-nav__list">
+                <li class="cabinet-nav__item">
+                  <button class="cabinet-nav__btn">
+                    <span class="cabinet-nav__icon">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#user2'></use>
+                      </svg>
+                    </span>
+                    Personal information
+                  </button>
+                </li>
+                <li class="cabinet-nav__item">
+                  <button class="cabinet-nav__btn active">
+                    <span class="cabinet-nav__icon">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#business'></use>
+                      </svg>
+                    </span>
+                    My business
+                  </button>
+                </li>
+                <li class="cabinet-nav__item">
+                  <button class="cabinet-nav__btn">
+                    <span class="cabinet-nav__icon">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#web'></use>
+                      </svg>
+                    </span>
+                    Web advertising
+                  </button>
+                </li>
+                <li class="cabinet-nav__item">
+                  <button class="cabinet-nav__btn">
+                    <span class="cabinet-nav__icon">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#print'></use>
+                      </svg>
+                    </span>
+                    Print Publication
+                  </button>
+                </li>
+                <li class="cabinet-nav__item">
+                  <button class="cabinet-nav__btn">
+                    <span class="cabinet-nav__icon cabinet-nav__icon--mode">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#out'></use>
+                      </svg>
+                    </span>
+                    Log-out
+                  </button>
+                </li>
+              </ul>
+            </aside>
+
+
+            <form class="advertising-form main-form" data-tabs-parrent>
+              <div class="main-form__box">
+                <span class="main-form__title">Business advertising</span>
+
+                <div class="adverlisting-tabs">
+                  <ul class="form-nav">
+                    <li class="form-nav__item">
+                      <button class="form-nav__btn form-nav__btn--mode active" data-tab="1">
+                        <span class="form-nav__btn-text">Auto
+                        </span>
+                      </button>
+
+                      <div class="select" data-select>
+                        <div class="select__header">
+                          <input type="hidden" class="select__input input-select" name="category_nav" value="1">
+                          <span class="select__current check" data-id="1">
+                            Auto
+                          </span>
+                          <svg class="select__current-icon" width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#arrow-b'></use>
+                          </svg>
+                        </div>
+                        <div class="select__body">
+                          <ul class="select__list">
+                            <li class="select__option" data-id="1" data-type="option" data-tab="1">
+                              Auto
+                            </li>
+                            <li class="select__option" data-id="2" data-type="option" data-tab='2'>
+                              Proffecional service
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </li>
+                    <li class="form-nav__item">
+                      <button class="form-nav__btn" data-tab="2">
+                        <span class="form-nav__btn-text">Proffecional
+                          service</span>
+                      </button>
+                    </li>
+                    <li class="form-nav__item">
+                      <button class="form-nav__btn form-nav__btn--add" data-tab="3">
+                        <svg width='18' height='18'>
+                          <use href='img/sprite/sprite.svg#plus'></use>
+                        </svg>
+                        <span class="form-nav__btn-text">Add category</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <ul class="adverlisting-tabs__content">
+                    <li class="adverlisting-tabs__item active" data-tab-content="1">
+                      <div class="adverlisting-tabs__box">
+
+
+
+                        <div class="main-form__choice">
+                          <div class="select" data-select>
+                            <div class="select__header">
+                              <input type="hidden" class="select__input input-select" name="category" value="1">
+                              <span class="select__current check" data-id="1">
+                                Auto
+                              </span>
+                              <svg class="select__current-icon" width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#arrow-b'></use>
+                              </svg>
+                            </div>
+                            <div class="select__body">
+                              <ul class="select__list">
+                                <li class="select__option" data-id="1" data-type="option">
+                                  Auto
+                                </li>
+                                <li class="select__option" data-id="2" data-type="option">
+                                  Auto2
+                                </li>
+                                <li class="select__option" data-id="3" data-type="option">
+                                  Auto3
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="date-select">
+                            <input type="text" class="date-select__input">
+                          </div>
+                          <div class="date-select">
+                            <input type="text" class="date-select__input">
+                          </div>
+                        </div>
+
+                        <div class="main-advert">
+                          <span class="main-advert__text">
+                            <svg width='18' height='18'>
+                              <use href='img/sprite/sprite.svg#alert'></use>
+                            </svg>
+                            Position of your advert
+                            <b>1</b>
+                          </span>
+                          <span class="main-advert__value">
+                            <b>20$</b> / month
+                          </span>
+                        </div>
+
+                        <div class="download download--mode">
+
+                          <div class="download__box">
+                            <div class="download__image">
+                              <img width="80" height="80" src="./img/cabinet/img3.png" alt="image">
+                            </div>
+
+                            <p>Please add a logo in .svg, .png,
+                              .webp format with a size
+                              of 150*150 pixels</p>
+
+                          </div>
+                          <label for="fileInput" class="download-btn">
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#download'></use>
+                            </svg>
+                            Download / Change photo
+                          </label>
+
+
+                          <input class="download__input" type="file" id="fileInput" accept="image/*">
+                        </div>
+
+                        <label for="mess_3" class="main-form__label">
+                          <textarea name="mess_3" id="mess_3" class="main-form__area main-form__area--mode"
+                            placeholder="Describe your business"></textarea>
+                        </label>
+
+                        <button class="yellow-btn">To pay</button>
+                      </div>
+                    </li>
+                    <li class="adverlisting-tabs__item" data-tab-content="2">
+                      <div class="adverlisting-tabs__box">
+                        <div class="main-form__status mode">
+                          <span class="main-form__subtitle">Moderation status:</span>
+                          <span class="main-form__status-text">changes made</span>
+                        </div>
+
+                        <div class="main-form__choice">
+                          <div class="select" data-select>
+                            <div class="select__header">
+                              <input type="hidden" class="select__input input-select" name="category" value="1">
+                              <span class="select__current check" data-id="1">
+                                Auto
+                              </span>
+                              <svg class="select__current-icon" width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#arrow-b'></use>
+                              </svg>
+                            </div>
+                            <div class="select__body">
+                              <ul class="select__list">
+                                <li class="select__option" data-id="1" data-type="option">
+                                  Auto
+                                </li>
+                                <li class="select__option" data-id="2" data-type="option">
+                                  Auto2
+                                </li>
+                                <li class="select__option" data-id="3" data-type="option">
+                                  Auto3
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="date-select">
+                            <input type="text" class="date-select__input">
+                          </div>
+                          <div class="date-select">
+                            <input type="text" class="date-select__input">
+                          </div>
+                        </div>
+
+                        <div class="main-advert">
+                          <span class="main-advert__text">
+                            <svg width='18' height='18'>
+                              <use href='img/sprite/sprite.svg#alert'></use>
+                            </svg>
+                            Position of your advert
+                            <b>1</b>
+                          </span>
+                          <span class="main-advert__value">
+                            <b>20$</b> / month
+                          </span>
+                        </div>
+
+                        <div class="download download--mode">
+
+                          <div class="download__box">
+                            <div class="download__image">
+                              <img width="80" height="80" src="./img/cabinet/img2.png" alt='image'>
+                            </div>
+
+                            <p>Please add a logo in .svg, .png,
+                              .webp format with a size
+                              of 150*150 pixels</p>
+
+                          </div>
+                          <label for="fileInput_2" class="download-btn">
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#download'></use>
+                            </svg>
+                            Download / Change photo
+                          </label>
+
+
+                          <input class="download__input" type="file" id="fileInput_2" accept="image/*">
+                        </div>
+
+                        <label for="mess_2" class="main-form__label">
+                          <textarea name="mess_2" id="mess_2" class="main-form__area main-form__area--mode limited-textarea"
+                            data-area disabled>"24/7 Emergency Locksmith" is a round-the-clock repair workshop specializing 
+in locksmith services. Whether you're locked out of your home, car, or office, our 
+skilled technicians are available at any hour of the day or night to provide quick, reliable assistance.
+</textarea>
+                        </label>
+
+                        <div class="main-form__btns">
+                          <a href="#" class="hidden-btn" data-btn-modal="write">Write to the moderator</a>
+                          <button class="yellow-btn" disabled>Extend and pay</button>
+                          <button class="transparent-btn">Cancel</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="adverlisting-tabs__item" data-tab-content="3">
+                      <div class="adverlisting-tabs__box">
+
+
+                        <div class="main-form__choice">
+                          <div class="select" data-select>
+                            <div class="select__header">
+                              <input type="hidden" class="select__input input-select" name="category" value="1">
+                              <span class="select__current" data-id="1">
+                                Сhoose a category
+                              </span>
+                              <svg class="select__current-icon" width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#arrow-b'></use>
+                              </svg>
+                            </div>
+                            <div class="select__body">
+                              <ul class="select__list">
+                                <li class="select__option" data-id="1" data-type="option">
+                                  Auto
+                                </li>
+                                <li class="select__option" data-id="2" data-type="option">
+                                  Auto2
+                                </li>
+                                <li class="select__option" data-id="3" data-type="option">
+                                  Auto3
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="date-select">
+                            <input type="text" class="date-select__input disable" placeholder="Select the  start month">
+                          </div>
+                          <div class="date-select">
+                            <input type="text" class="date-select__input disable" placeholder="Select the end month">
+                          </div>
+                        </div>
+
+                        <div class="download download--mode">
+
+                          <div class="download__box">
+                            <div class="download__image">
+                              <img width="80" height="80" src="./img/cabinet/img3.png" alt="image">
+                            </div>
+
+                            <p>Please add a logo in .svg, .png,
+                              .webp format with a size
+                              of 150*150 pixels</p>
+
+                          </div>
+                          <label for="fileInput_3" class="download-btn">
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#download'></use>
+                            </svg>
+                            Download / Change photo
+                          </label>
+
+
+                          <input class="download__input" type="file" id="fileInput_3" accept="image/*">
+                        </div>
+
+                        <label for="mess" class="main-form__label">
+                          <textarea name="mess" id="mess" class="main-form__area main-form__area--mode"
+                            placeholder="Describe your advertising"></textarea>
+                        </label>
+
+                        <button class="yellow-btn" disabled>To pay</button>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+              <div class="main-form__aside">
+                <div class="main-form__aside-box active" data-aside-content="1">
+                  <div class="banner-card banner-card--pay">
+                    <div class="banner-card__top">
+                      <div class="banner-card__status">
+                        <span class="banner-card__subtitle">Pay status:</span>
+                        <span class="banner-card__status-text">paid</span>
+                      </div>
+  
+                      <span class="banner-card__pretitle">AUTO</span>
+                    </div>
+  
+                    <span class="banner-card__date">10 <b>дн</b> : 8 <b>год</b> : 12 <b>хв</b></span>
+                  </div>
+  
+                  <div class="banner-card banner-card--info" data-link="/business.html">
+                    <div class="banner-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cabinet/banner2.webp'>
+                        <img width='335' height='199' src='img/cabinet/banner2.png' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+
+                  <button class="yellow-btn">Change image</button>
+                </div>
+                <div class="main-form__aside-box" data-aside-content="2">
+                  <div class="banner-card banner-card--info" data-link="/business.html">
+                    <div class="banner-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cabinet/banner3.webp'>
+                        <img width='335' height='199' src='img/cabinet/banner3.png' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-form__aside-box" data-aside-content="3">
+                  <div class="banner-card banner-card--info" data-link="/business.html">
+                    <div class="banner-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/cabinet/banner3.webp'>
+                        <img width='335' height='199' src='img/cabinet/banner3.png' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+
+  <script defer src="js/air-datepicker.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

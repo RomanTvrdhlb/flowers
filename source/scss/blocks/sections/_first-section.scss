@@ -1,0 +1,31 @@
+.first-section {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(30px, 7.4405vw, 100px);
+  margin-bottom: clamp(100px, 11.1607vw, 150px);
+
+   &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 3.7202vw, 50px);
+    }
+
+  &__banner{
+    width: 100%;
+    height: clamp(250px, 40.625vw, 546px);
+
+    img,picture{
+      width: 100%;
+      height: 100%;
+      object-position: center;
+    }
+
+    &.mode{
+      height: clamp(250px, 41.369vw, 556px);
+    }
+  }
+
+
+  
+}

@@ -1,0 +1,76 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+:root {
+  // --------------- default global variables ---------------
+  // --error-bg: #d01f1f;
+  --body-bg: #fff;
+  --body-font-size: 16px;
+  --content-width: 1344px;
+
+  --container-offset: clamp(20px, 1.7857vw, 24px);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // --------------- default scroll variables ---------------
+  --scrollbar-thumb:  #f2b50f;
+  --scrollbar-track: rgba(0, 0, 0, 0.18);
+  --scrollbar-track-hover: transparent;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+    // --------------- default JS variables ---------------
+    --header-height: 89px;
+ 
+    @include tablet{
+      --header-height: 69px;
+    }
+
+  // --------------- default font-family variables ---------------
+
+  --font-family: "Quattrocento", sans-serif; // var(--font-family);
+
+  // --------------- default text color variables ---------------
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#505647)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#a28f70)}; // rgba(var(--cl-d),1.0);
+
+
+  --cl-e: #{HexToRGB(#f1b310)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#9d9d9d)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#C4C4C4)}; // rgba(var(--cl-g),1.0);
+  --cl-h: #{HexToRGB(#f2b50f)}; // rgba(var(--cl-h),1.0);
+  --cl-i: #{HexToRGB(#2b2937)}; // rgba(var(--cl-i),1.0);
+  --cl-j: #{HexToRGB(#c5c5c5)}; // rgba(var(--cl-j),1.0);
+
+  // --------------- default background color variables ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#a28f70)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#ece9df)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#505647)}; // rgba(var(--bg-e),1.0);
+
+
+  --bg-f: #{HexToRGB(#f2b50f)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#39A720)}; // rgba(var(--bg-g),1.0);
+  --bg-h: #{HexToRGB(#F8D987)}; // rgba(var(--bg-h),1.0);
+  --bg-i: #{HexToRGB(#C81626)}; // rgba(var(--bg-i),1.0);
+  --bg-j: #{HexToRGB(#e2e1e1)}; // rgba(var(--bg-j),1.0);
+
+  // --------------- default border color variable ---------------
+  --br-a: #ccd0d9; // var(--br-a);
+  --br-b: #f2b50f; // var(--br-b);
+  --br-c: #d9d9d9; // var(--br-c);
+  --br-d: #e2e1e1; // var(--br-d);
+  --br-e: #e5e5e5; // var(--br-e);
+  --br-f: #f5f3f3; // var(--br-f);
+  --br-g: #000000; // var(--br-g);
+
+ // --------------- default gradient color variable ---------------
+ --gr-a: linear-gradient(90deg, #1e1f38 0%, rgba(30, 31, 56, 0) 100%); // var(--gr-a);
+ --gr-b: linear-gradient(180deg, #0f1024 0%, rgba(20, 25, 47, 0) 100%); // var(--gr-b);
+ --gr-c: linear-gradient(180deg, #0f1024 0%, #14192f 100%); // var(--gr-c);
+}       
+
+

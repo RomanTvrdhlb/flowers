@@ -1,0 +1,18 @@
+.filter-slider{
+    width: 100%;
+    padding: clamp(16px, 1.8571vw, 26px) 0;
+    background: rgba(var(--bg-c),1.0);
+    border-radius: 10px;
+    
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 21px;
+        margin-top: 20px;
+    }
+
+    .swiper-slide{
+        padding: 0 clamp(16px, 1.8571vw, 26px);
+    }
+}

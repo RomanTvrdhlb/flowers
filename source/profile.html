@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="cabinet-section">
+      <div class="container">
+        <div class="cabinet-section__box">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">
+                <svg width='16' height='14'>
+                  <use href='img/sprite/sprite.svg#home2'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Profile</a>
+            </li>
+          </ul>
+
+          <ul class="info-list">
+            <li class="info-list__item">
+              <div class="warn-card">
+                <button class="warn-card__close">
+                  <svg width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#close'></use>
+                  </svg>
+                </button>
+                <span class="warn-card__title">Спливає термін оплати</span>
+                <p>Ваш термін оплати спливає за два дні, 
+                  для подальшого користування послугою
+                  сплатіть за послугу</p>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="warn-card">
+                <button class="warn-card__close">
+                  <svg width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#close'></use>
+                  </svg>
+                </button>
+                <span class="warn-card__title">Спливає термін оплати</span>
+                <p>Ваш термін оплати спливає за два дні, 
+                  для подальшого користування послугою
+                  сплатіть за послугу</p>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="warn-card">
+                <button class="warn-card__close">
+                  <svg width='18' height='18'>
+                    <use href='img/sprite/sprite.svg#close'></use>
+                  </svg>
+                </button>
+                <span class="warn-card__title">Спливає термін оплати</span>
+                <p>Ваш термін оплати спливає за два дні, 
+                  для подальшого користування послугою
+                  сплатіть за послугу</p>
+              </div>
+            </li>
+            <li class="info-list__item">
+              <div class="warn-card">
+                <button class="warn-card__close">
+                  <svg width='18' height='18'> 
+                    <use href='img/sprite/sprite.svg#close'></use>
+                  </svg>
+                </button>
+                <span class="warn-card__title">Спливає термін оплати</span>
+                <p>Ваш термін оплати спливає за два дні, 
+                  для подальшого користування послугою
+                  сплатіть за послугу</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="cabinet-section__content">
+            <h1 class="cabinet-section__title pretitle">Profile</h1>
+
+            <aside class="cabinet-nav">
+                <span class="subtitle subtitle--mode">John Benet</span>
+
+                <ul class="cabinet-nav__list">
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn active">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#user2'></use>
+                        </svg>
+                      </span>
+                      Personal information
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#business'></use>
+                        </svg>
+                      </span>
+                      My business
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#web'></use>
+                        </svg>
+                      </span>
+                      Web advertising
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#print'></use>
+                        </svg>
+                      </span>
+                      Print Publication
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon cabinet-nav__icon--mode">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#out'></use>
+                        </svg>
+                      </span>
+                      Log-out
+                    </button>
+                  </li>
+                </ul>
+            </aside>
+
+            <div class="cabinet-section__inner">
+           
+              <form class="cabinet-form main-form">
+                <span class="main-form__title main-form__title--mode">Personal information</span>
+                <ul class="main-form__list">
+                  <li class="main-form__item">
+                    <label for="full_name" class="main-form__label">
+                      <input type="text" name="full_name" id="full_name" class="main-form__input" placeholder="Full name">
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label for="phone" class="main-form__label">
+                      <input type="tel" name="phone" id="phone" class="main-form__input" placeholder="Phone">
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label for="email" class="main-form__label">
+                      <input type="email" name="email" id="email" class="main-form__input" placeholder="E-mail">
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label for="pass" class="main-form__label">
+                      <input type="text" name="pass" id="pass" class="main-form__input" placeholder="Password">
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label for="pass_2" class="main-form__label">
+                      <input type="text" name="pass_2" id="pass_2" class="main-form__input" placeholder="Repeat Password">
+                    </label>
+                  </li>
+                </ul>
+                  <button class="yellow-btn">Save</button>
+              </form>
+
+            </div>
+
+            <div class="cabinet-section__banner">
+              <div class="banner-card banner-card--info" data-link="/business.html">
+                <div class="banner-card__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cabinet/banner3.webp'>
+                    <img width='335' height='199' src='img/cabinet/banner3.png' alt='image'>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

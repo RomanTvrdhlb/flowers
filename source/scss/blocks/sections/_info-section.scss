@@ -1,0 +1,28 @@
+.info-section{
+    margin-bottom: clamp(100px, 7.8869vw, 106px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(30px, 3.7202vw, 50px);
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(100px, 11.1607vw, 150px);
+    }
+
+    .main-top{
+        &__title{
+            font-size: clamp(30px, 5.2083vw, 70px);
+            text-align: center;
+            color: rgba(var(--cl-c),1.0);
+
+            @include for-small-tablet{
+                line-height: 114%;
+                letter-spacing: -0.02em;
+            }
+        }
+    }
+}

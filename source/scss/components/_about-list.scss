@@ -1,0 +1,26 @@
+.about-list{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(100px, 11.1607vw, 150px);
+
+    &__item{
+
+        &:nth-child(even){
+            .about-card{
+                @include for-small-tablet{
+                    flex-direction: row-reverse;
+                }
+
+                &__image{
+                    padding-right: 0;
+                    padding-left: clamp(54px, 8.5565vw, 115px);
+
+                    &::before{
+                        left: 0;
+                        right: initial;
+                    }
+                }
+            }
+        }
+    }
+}

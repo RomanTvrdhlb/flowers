@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="cabinet-section">
+      <div class="container">
+        <div class="cabinet-section__box">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">
+                <svg width='16' height='14'>
+                  <use href='img/sprite/sprite.svg#home2'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Profile</a>
+            </li>
+          </ul>
+
+          <div class="cabinet-section__wrapp">
+            <h1 class="cabinet-section__title pretitle">Profile</h1>
+
+            <aside class="cabinet-nav">
+                <span class="subtitle subtitle--mode">John Benet</span>
+
+                <ul class="cabinet-nav__list">
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#user2'></use>
+                        </svg>
+                      </span>
+                      Personal information
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn active">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#business'></use>
+                        </svg>
+                      </span>
+                      My business
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#web'></use>
+                        </svg>
+                      </span>
+                      Web advertising
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#print'></use>
+                        </svg>
+                      </span>
+                      Print Publication
+                    </button>
+                  </li>
+                  <li class="cabinet-nav__item">
+                    <button class="cabinet-nav__btn">
+                      <span class="cabinet-nav__icon cabinet-nav__icon--mode">
+                        <svg width='16' height='16'>
+                          <use href='img/sprite/sprite.svg#out'></use>
+                        </svg>
+                      </span>
+                      Log-out
+                    </button>
+                  </li>
+                </ul>
+            </aside>
+
+          
+           
+              <form class="profile-form main-form">
+                <div class="main-form__box">
+
+                  <div class="main-form__top">
+                    <span class="main-form__title subtitle">Personal information</span>
+
+                    <div class="main-form__status">
+                      <span class="main-form__subtitle">Moderation status:</span>
+                      <span class="main-form__status-text">changes made</span>
+                    </div>
+                  </div>
+                
+                <ul class="main-form__list">
+                  <li class="main-form__item">
+                    <label for="company" class="main-form__label">
+                      <input type="text" name="company" id="company" class="main-form__input" placeholder="Company Name">
+                    </label>
+                  </li>
+                 
+                  <li class="main-form__item">
+                    <label for="phone" class="main-form__label">
+                      <input type="tel" name="phone" id="phone" class="main-form__input" placeholder="Phone">
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label for="email" class="main-form__label">
+                      <input type="email" name="email" id="email" class="main-form__input" placeholder="E-mail">
+                    </label>
+                  </li>
+                  <li class="main-form__item">
+                    <label for="mess" class="main-form__label">
+                      <textarea name="mess" id="mess" class="main-form__area main-form__area--mode" placeholder="Describe your business"></textarea>
+                    </label>
+                  </li>
+                </ul>
+
+                <ul class="services-list">
+                  <li class="services-list__item">
+                    <div class="services-card">
+                      <span class="services-card__title">car repair</span>
+                      <button class="services-card__close">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#close'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="services-list__item">
+                    <div class="services-card">
+                      <span class="services-card__title">car repair</span>
+                      <button class="services-card__close">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#close'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="services-list__item">
+                    <div class="services-card">
+                      <span class="services-card__title">car repair</span>
+                      <button class="services-card__close">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#close'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="services-list__item">
+                    <div class="services-card">
+                      <span class="services-card__title">car repair</span>
+                      <button class="services-card__close">
+                        <svg width='12' height='12'>
+                          <use href='img/sprite/sprite.svg#close'></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="main-form__add">
+                  <label for="servise" class="main-form__label">
+                    <input type="text" name="servise" id="servise" class="main-form__input" placeholder="Servise name">
+                  </label>
+                  <button class="hidden-btn">Add service</button>
+                </div>
+
+                <div class="main-form__services">
+                    <div class="service-card">
+                      <div class="service-card__box">
+                        <span class="service-card__title">24/7 Emergency Locksmith</span>
+
+                        <div class="service-card__adress">
+                          <span class="service-card__text">NJ</span>
+                          <button class="geo-btn" data-btn-modal="edit">
+                            <svg width='14' height='14'>
+                              <use href='img/sprite/sprite.svg#geo2'></use>
+                            </svg>
+                            <span class="geo-btn__text">Edit</span>
+                          </button>
+                        </div>
+                        <button class="edit-btn">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#edit'></use>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="service-card__wrapp">
+                        <ul class="service-card__list">
+                          <li class="service-card__item">
+                            <label for="company_1" class="service-card__label">
+                              <input type="text" name="company_1" id="company_1" class="service-card__input" placeholder="Company Name">
+                            </label>
+                          </li>
+                          <li class="service-card__item">
+                            <label for="adress_1" class="service-card__label">
+                              <input type="text" name="adress_1" id="adress_1" class="service-card__input" placeholder="Adress">
+                            </label>
+                          </li>
+                          <li class="service-card__item">
+                            <label for="phone_1" class="service-card__label">
+                              <input type="tel" name="phone_1" id="phone_1" class="service-card__input" placeholder="Phone">
+                            </label>
+                          </li>
+                          <li class="service-card__item">
+                            <label for="email_1" class="service-card__label">
+                              <input type="email" name="email_1" id="email_1" class="service-card__input" placeholder="E-mail">
+                            </label>
+                          </li>
+                        </ul>
+
+                        <div class="service-card__map">
+                          <iframe defer src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97800.37624456717!2d-75.20042794488818!3d40.00260032269511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2z0KTRltC70LDQtNC10LvRjNGE0ZbRjywg0J_QtdC90YHRltC70YzQstCw0L3RltGPLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1722393194705!5m2!1suk!2sua" width="645" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="service-card__btns">
+                          <button class="yellow-btn">Save</button>
+                          <button class="transparent-btn service-card__close">Cansel</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="service-card">
+                      <div class="service-card__box">
+                        <span class="service-card__title">24/7 Emergency Locksmith</span>
+
+                        <div class="service-card__adress">
+                          <span class="service-card__text">1713 Old York Road Abington PA 19001</span>
+                          <button class="geo-btn" data-btn-modal="edit">
+                            <svg width='14' height='14'>
+                              <use href='img/sprite/sprite.svg#geo2'></use>
+                            </svg>
+                            <span class="geo-btn__text">Edit</span>
+                          </button>
+                        </div>
+                        <button class="edit-btn">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#edit'></use>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="service-card__wrapp">
+                        <ul class="service-card__list">
+                          <li class="service-card__item">
+                            <label for="company_6" class="service-card__label">
+                              <input type="text" name="company_6" id="company_6" class="service-card__input" placeholder="Company Name">
+                            </label>
+                          </li>
+                          <li class="service-card__item">
+                            <label for="adress_6" class="service-card__label">
+                              <input type="text" name="adress_6" id="adress_6" class="service-card__input" placeholder="Adress">
+                            </label>
+                          </li>
+                          <li class="service-card__item">
+                            <label for="phone_6" class="service-card__label">
+                              <input type="tel" name="phone_6" id="phone_6" class="service-card__input" placeholder="Phone">
+                            </label>
+                          </li>
+                          <li class="service-card__item">
+                            <label for="email_6" class="service-card__label">
+                              <input type="email" name="email_6" id="email_6" class="service-card__input" placeholder="E-mail">
+                            </label>
+                          </li>
+                        </ul>
+
+                        <div class="service-card__map">
+                          <iframe defer src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97800.37624456717!2d-75.20042794488818!3d40.00260032269511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2z0KTRltC70LDQtNC10LvRjNGE0ZbRjywg0J_QtdC90YHRltC70YzQstCw0L3RltGPLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1722393194705!5m2!1suk!2sua" width="645" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="service-card__btns">
+                          <button class="yellow-btn">Save</button>
+                          <button class="transparent-btn service-card__close">Cansel</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="hidden-btn">Add new adress</button>
+                </div>
+
+
+                  <button class="yellow-btn">Send for moderation</button>
+                </div>
+                <div class="download">
+                  <span class="subtitle">Download image</span>
+    
+                  <div class="download__image">
+                    <img width="333" height="376" src="./img/cabinet/img1.png" alt="image">
+                  </div>
+    
+                  <div class="download__bottom">
+                    <p>Please add a photo in .jpg, .png, .webp format 
+                      with a size of 288*318 pixels</p>
+                    <label for="fileInput" class="download-btn">
+                      <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#download'></use>
+                      </svg>
+                      Download / Change photo
+                    </label>
+                  </div>
+    
+                  <input class="download__input" type="file" id="fileInput" accept="image/*">
+                </div>
+              </form>
+
+              
+           
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>

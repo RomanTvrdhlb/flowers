@@ -1,0 +1,35 @@
+.main-top{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 3.7202vw, 50px);
+    align-items: center;
+    
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: clamp(35px, 7.4405vw, 100px);
+        text-align: center;
+        color: rgba(var(--cl-d),1.0);
+
+        @include for-small-tablet{
+            line-height: 80%;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(15px, 2.2321vw, 30px);
+        max-width: 415px;
+    }
+
+    p{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp(18px, 1.4881vw, 20px);
+        text-align: center;
+        color: rgba(var(--cl-c),1.0);
+    }
+}

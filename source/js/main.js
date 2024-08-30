@@ -9,79 +9,49 @@ document.addEventListener("DOMContentLoaded", function() {
     const originalSlides = Array.from(swiperWrapper.children);
 
     let swiperInstance;
-    let slidesCloned = false; // Флаг для отслеживания клонирования
+    let slidesCloned = false;
 
     const createSwiper = () => {
       swiperInstance = new Swiper(swiper, {
         spaceBetween  : 0,
-        slidesPerView : 3,
+        slidesPerView : 'auto',
         speed         : 2500,
         observer      : true,
         observeParents: true,
         centeredSlides: true,
-        initialSlide: 1,
+        loop          : true,
+        initialSlide  : 2,
 
         pagination: {
           el: pagination,
         },
-
         breakpoints: {
           320: {
-            loop: true,
-            slidesPerView : 'auto',
             initialSlide: 2,
           },
           768: {
-            loop: false,
-            slidesPerView : 3,
             initialSlide: 1,
-          },
-          1024: {
-            allowTouchMove: false,
+            speed       : 1500,
           }
         }
       });
     };
 
-    // Клонирование слайдов
     const cloneSlides = () => {
-      if (window.innerWidth < 768 && !slidesCloned) {
+      if (originalSlides.length < 6 && !slidesCloned) {
         originalSlides.forEach(slide => {
           const clonedSlide = slide.cloneNode(true);
           swiperWrapper.appendChild(clonedSlide);
         });
-        slidesCloned = true; // Устанавливаем флаг
+        slidesCloned = true;
       }
     };
 
-    // Удаление клонированных слайдов
-    const removeClonedSlides = () => {
-      if (window.innerWidth >= 768 && slidesCloned) {
-        // Удаляем все слайды, кроме оригинальных
-        while (swiperWrapper.children.length > originalSlides.length) {
-          swiperWrapper.removeChild(swiperWrapper.lastElementChild);
-        }
-        slidesCloned = false; // Сбрасываем флаг
-      }
-    };
-
-    // Обработка состояния при загрузке страницы
-    if (window.innerWidth < 768) {
-      cloneSlides();
-    } else {
-      removeClonedSlides();
-    }
-
+    cloneSlides();
     createSwiper();
 
-    // Обработка изменения размера окна
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 768) {
-        cloneSlides();
-      } else {
-        removeClonedSlides();
-      }
-      swiperInstance.update(); // Обновляем инстанс Swiper, чтобы он учел изменения
+      swiperInstance.update();
     });
   });
 });

@@ -1,97 +1,101 @@
-.top-slider{
+.top-slider {
+  max-width: 1160px;
+  width: 100%;
+  align-self: center;
 
- 
-
-    .swiper{
-        &-container{
-          @include for-small-tablet{
-            display: flex;
-            justify-content: center;
-          }
-
-            @include small-tablet{
-                margin-left: calc(var(--container-offset) * -1);
-                width: calc(100% + (var(--container-offset) * 2));
-                padding: 0 var(--container-offset);
-            }
-        }
-
-        &-wrapper{
-          @include for-small-tablet{
-            display: flex;
-            align-items: flex-end;
-            width: fit-content;
-          }
-        }
-
-        &-slide{
-          margin: 0 calc(clamp(10px, 2.6786vw, 36px) / 2);
-          transition: all .6s;
-         
-          @include for-small-tablet{
-            width: clamp(164px, 23.0655vw, 310px) !important;
-          }
-
-          @include small-tablet{
-            height: 100%;
-            width: clamp(215px, 31.5476vw, 424px);
-          }
-       
-          &:not(.swiper-slide-active){
-            .info-card{
-              padding-bottom: 10px;
-
-              &__image{
-                @include for-small-tablet{
-                  max-height: clamp(208px, 31.7708vw, 427px);
-                }
-
-                @include small-tablet{
-                  transform: scale(.8);
-
-                  height: clamp(258px, 37.76vw, 290px);
-                }
-              }
-
-              p{
-                @include small-tablet{
-                  opacity: 0;
-                  transition: all .4s;
-                }
-              }
-            }
-          }
-        
-            &-active{
-                @include for-small-tablet{
-                  width: clamp(265px, 31.5476vw, 424px) !important;
-                }
-            }
-        
-        }
-    }
-   
-    .swiper-pagination{
-      display: flex;
-      grid-gap: 10px;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-
-      .swiper-pagination-bullet{
-        display: flex;
-        width: 11px;
-        height: 11px;
-        border-radius: 100%;
-        background-color: rgba(var(--bg-c),1.0);
-
-        &-active{
-          background-color: rgba(var(--bg-e),1.0);
-        }
+  .swiper {
+    &-container {
+      @include for-small-tablet {
+        width: 100%;
       }
+
+      @include small-tablet {
+        margin-left: calc(var(--container-offset) * -1);
+        width: calc(100% + (var(--container-offset) * 2));
+        padding: 0 var(--container-offset);
+      }
+    }
+
+    &-wrapper {
 
       @include for-small-tablet{
-        display: none;
+        align-items: baseline;
+      }
+
+      @include for-small-tablet {
+        display: flex;
+        width: 100%;
       }
     }
+
+    &-slide {
+      @include for-small-tablet {
+        width: clamp(265px, 34.194vw, 424px);
+        transition: all .6s;
+      }
+
+      @include small-tablet {
+        height: 100%;
+        width: clamp(215px, 31.5476vw, 424px);
+      }
+
+      &:not(.swiper-slide-active) {
+        @include for-small-tablet{
+          transform: scale(.732);
+        }
+
+        .info-card {
+          &__image {
+            @include small-tablet {
+              transform: scale(0.8);
+              height: clamp(258px, 37.76vw, 290px);
+            }
+          }
+
+          p {
+            @include for-small-tablet{
+              font-size: clamp(25px, 2.0833vw, 28px);
+            }
+
+            @include small-tablet {
+              opacity: 0;
+              transition: all 0.4s;
+            }
+          }
+        }
+      }
+
+      &-active{
+        .info-card__image{
+          @include for-small-tablet{
+            height: clamp(317px, 40.968vw, 508px);
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    .swiper-pagination-bullet {
+      display: flex;
+      width: 11px;
+      height: 11px;
+      border-radius: 100%;
+      background-color: rgba(var(--bg-c), 1);
+
+      &-active {
+        background-color: rgba(var(--bg-e), 1);
+      }
+    }
+
+    @include for-small-tablet {
+      display: none;
+    }
+  }
 }

@@ -14,9 +14,16 @@
     &__image{
         width: 100%;
         height: auto;
-        transition: all .8s;
         display: flex;
         
+        @include for-small-tablet{
+            transition: all .8s;
+        }
+
+        @include small-tablet{
+            transition: all .6s;
+        }
+
         img,picture{
             width: 100%;
             height: auto;
@@ -28,5 +35,6 @@
         font-weight: 400;
         font-size: clamp(18px, 1.4881vw, 20px);
         color: rgba(var(--bg-e),1.0);
+        line-height: 110%;
     }
 }

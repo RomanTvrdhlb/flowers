@@ -3,6 +3,7 @@
     flex-direction: column;
     grid-gap: clamp(20px, 3.7202vw, 50px);
     align-items: center;
+    z-index: 5;
     
     &__title{
         font-family: var(--font-family);
@@ -33,6 +34,16 @@
         align-items: center;
         grid-gap: clamp(15px, 2.2321vw, 30px);
         max-width: 415px;
+
+        &.mode{
+            p{
+                br{
+                    @include for-small-tablet{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     p{
@@ -41,5 +52,6 @@
         font-size: clamp(18px, 1.4881vw, 20px);
         text-align: center;
         color: rgba(var(--cl-c),1.0);
+        line-height: 110%;
     }
 }

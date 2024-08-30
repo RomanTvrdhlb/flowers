@@ -15,6 +15,12 @@
             line-height: 80%;
             letter-spacing: -0.02em;
         }
+
+        br{
+            @include for-mobile{
+                display: none;
+            }
+        }
     }
 
     &__box{

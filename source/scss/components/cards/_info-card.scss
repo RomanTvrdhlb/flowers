@@ -1,0 +1,22 @@
+.info-card{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 2.2321vw, 30px);
+
+    &__image{
+        width: 100%;
+        height: auto;
+
+        img,picture{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    p{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp(18px, 1.4881vw, 20px);
+        color: rgba(var(--bg-e),1.0);
+    }
+}

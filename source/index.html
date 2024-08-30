@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="Ru">
-@include('partials/head.html')
+@include('partials/head-swiper.html')
 
 <body>
 
@@ -72,7 +72,7 @@
 
 
 
-            <li class="about-list__item">
+            <!-- <li class="about-list__item">
               <div class="about-card">
                 <ul class="about-card__list">
                  <li class="about-card__item">Gender Reveal Parties</li>
@@ -104,7 +104,7 @@
                   </picture>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -117,8 +117,52 @@
             <h1 class="main-top__title">Top quality flowers</h1>
           </div>
 
+          <div class="info-section__inner">
+
+          <div class='top-slider'>
+            <div class='swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <div class="info-card">
+                    <div class="info-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/slide1.webp'>
+                        <img width='424' height='508' src='img/index/slide1.png' alt='image'>
+                      </picture>
+                    </div>
+                    <p>We import fresh-cut flowers from various countries like Holland, France, Italy, Canada, Ecuador, and Colombia to ensure a diverse selection for your special occasion.</p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="info-card">
+                    <div class="info-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/slide2.webp'>
+                        <img width='424' height='508' src='img/index/slide2.png' alt='image'>
+                      </picture>
+                    </div>
+                    <p>But what if you need decorations for an extended period, and the hot climate threatens the freshness of flowers? 
+                      No worries! </p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="info-card">
+                    <div class="info-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/slide3.webp'>
+                        <img width='424' height='508' src='img/index/slide3.png' alt='image'>
+                      </picture>
+                    </div>
+                    <p>We offer high-quality artificial flower compositions that can withstand any weather and time. Plus, once the event is over, you can use them as beautiful home decor.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <span class='swiper-pagination'></span>
+          </div>
+
           <div class="about-card">
-            <div class="about-card__box">
+            <div class="about-card__box mode">
               <span class="about-card__title">Personalized approach – what does it mean to us</span>
                <p>Your desires are our top priority. We offer free wedding consultations with our designers and decorators to understand your vision, suggest new ideas, and plan together every detail of the decor – down 
                 to the smallest ones.</p>
@@ -134,6 +178,7 @@
           </div>
 
         </div>
+        </div>
       </div>
     </section>
 
@@ -146,7 +191,7 @@
       </div>
     </section>
 
-    <section class="cta-section mode">
+    <!-- <section class="cta-section mode">
       <div class="container">
         <div class="cta-section__box">
           <h2 class="cta-section__title">We operate not only in Pennsylvania but also in other states.</h2>
@@ -165,11 +210,11 @@
             </div>
           </div>
       </div>
-    </section>
+    </section> -->
 
   </main>
- 
-  <script defer src="js/main.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 

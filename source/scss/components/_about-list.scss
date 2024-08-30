@@ -3,21 +3,68 @@
     flex-direction: column;
     grid-gap: clamp(100px, 11.1607vw, 150px);
 
-    &__item{
+    &:not(.mode){
+        .about-list__item{
 
-        &:nth-child(even){
-            .about-card{
-                @include for-small-tablet{
-                    flex-direction: row-reverse;
+            &:nth-child(even){
+                .about-card{
+                    @include for-small-tablet{
+                        flex-direction: row-reverse;
+                    }
+    
+                    &__image{
+                        padding-right: 0;
+                        padding-left: clamp(54px, 8.5565vw, 115px);
+    
+                        &::before{
+                            left: 0;
+                            right: initial;
+                        }
+                    }
                 }
+            }
+        }
+    }
 
-                &__image{
-                    padding-right: 0;
-                    padding-left: clamp(54px, 8.5565vw, 115px);
+   
 
-                    &::before{
-                        left: 0;
-                        right: initial;
+    &.mode{
+        .about-card__box{
+            @include for-small-tablet{
+                padding:0;
+            }
+
+            &.mode{
+                @include for-small-tablet{
+                    padding-bottom: clamp(20px, 3.3482vw, 45px);
+                }
+            }
+        }
+        .about-list__item{
+
+            &:nth-child(even){
+                .about-card{
+                @include for-small-tablet{
+                    grid-gap: clamp(30px, 10.7887vw, 145px);
+                    justify-content: flex-end;
+                }
+            }
+            }
+
+            &:nth-child(odd){
+                .about-card{
+                    @include for-small-tablet{
+                        flex-direction: row-reverse;
+                    }
+    
+                    &__image{
+                        padding-right: 0;
+                        padding-left: clamp(54px, 8.5565vw, 115px);
+    
+                        &::before{
+                            left: 0;
+                            right: initial;
+                        }
                     }
                 }
             }
